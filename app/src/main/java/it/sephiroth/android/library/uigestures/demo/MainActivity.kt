@@ -109,7 +109,7 @@ open class MainActivity : AppCompatActivity() {
     private fun setupRecognizer(recognizer: UIGestureRecognizer) {
         recognizer.actionListener = { rec ->
             Timber.d("actionListener: ${rec.currentLocationX}, ${rec.currentLocationY}")
-            testView.drawableHotspotChanged(rec.currentLocationX, rec.currentLocationY)
+            //testView.drawableHotspotChanged(rec.currentLocationX, rec.currentLocationY)
             testView.isPressed = true
             testView.performClick()
             testView.isPressed = false
